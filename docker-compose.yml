@@ -3,7 +3,7 @@ version: "3.6"
 services:
   db:
     container_name: postgres
-    build: .
+    image: postgres
     restart: always
     environment:
       POSTGRES_USER: postgres
