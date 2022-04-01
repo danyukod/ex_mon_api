@@ -1,0 +1,8 @@
+### Send POST request with json body
+POST http://localhost:4000/api/trainers
+Content-Type: application/json
+
+{
+  "name": "Danilo-Teste",
+  "password": "123456"
+}
