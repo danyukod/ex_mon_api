@@ -11,8 +11,8 @@ defmodule ExMonApi.Trainer.Delete do
 
   defp delete(uuid) do
     case fetch_trainer(uuid) do
-      trainer -> Repo.delete(trainer)
       nil -> {:error, "Trainer not found"}
+      trainer -> Repo.delete(trainer)
     end
   end
 
